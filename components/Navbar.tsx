@@ -78,7 +78,7 @@ const MobielMenu = ({ isOpen, close }: { isOpen: boolean, close: () => void }) =
         </div>
         <ul className='text-white font-semibold text-2xl mx-10 mt-14'>
             {Navlinks.map(nav => (
-                <li className='my-3'>{nav.name}</li>
+                <li key={nav.id} className='my-3'>{nav.name}</li>
             ))}
         </ul>
     </div>
